@@ -1,0 +1,1058 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4d9-R4-4OY">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="GSO-QI-brG">
+            <objects>
+                <viewController id="4d9-R4-4OY" customClass="YBDViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="62j-WP-rAh"/>
+                        <viewControllerLayoutGuide type="bottom" id="MdU-sg-BoW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MmJ-EL-SQX">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="568" placeholderIntrinsicHeight="320" image="landingpagebackground1.png" translatesAutoresizingMaskIntoConstraints="NO" id="yOE-Cn-cFK">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                            </imageView>
+                            <containerView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gik-t7-8em">
+                                <rect key="frame" x="126" y="29" width="442" height="291"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="U0F-Vs-iuI" kind="embed" id="aYl-YP-ie2"/>
+                                </connections>
+                            </containerView>
+                            <containerView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zrI-HD-8mT">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="3Df-2q-pTY" kind="embed" id="m7t-iP-KCU"/>
+                                </connections>
+                            </containerView>
+                            <containerView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uTc-gP-a0M">
+                                <rect key="frame" x="126" y="29" width="442" height="291"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="ybV-Dp-IYj" kind="embed" id="zWj-wR-AsW"/>
+                                </connections>
+                            </containerView>
+                            <containerView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bbi-HR-qBi">
+                                <rect key="frame" x="126" y="29" width="442" height="291"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="Cua-EJ-dYu" kind="embed" id="hsn-pa-Yms"/>
+                                </connections>
+                            </containerView>
+                            <containerView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kUE-RZ-M7o">
+                                <rect key="frame" x="126" y="29" width="442" height="291"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="aJD-kL-IdB" kind="embed" id="VeD-6E-n8g"/>
+                                </connections>
+                            </containerView>
+                            <containerView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cP0-sX-KCt">
+                                <rect key="frame" x="126" y="29" width="442" height="291"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="FtK-51-7IG" kind="embed" id="dMM-G1-3Vv"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUN-Nx-7ma">
+                                <rect key="frame" x="0.0" y="49" width="126" height="31"/>
+                                <state key="normal" backgroundImage="tabselectedrollover1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnMainClick:" destination="4d9-R4-4OY" eventType="touchUpInside" id="c86-LR-kEe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGX-aT-zVt">
+                                <rect key="frame" x="0.0" y="80" width="126" height="31"/>
+                                <state key="normal" backgroundImage="tabselectedrollover1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnCategoryClick:" destination="4d9-R4-4OY" eventType="touchUpInside" id="y9K-AJ-qpH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uo0-MS-auX">
+                                <rect key="frame" x="0.0" y="111" width="126" height="31"/>
+                                <state key="normal" backgroundImage="tabselectedrollover1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnVideoStartClick:" destination="4d9-R4-4OY" eventType="touchUpInside" id="30k-yk-e4l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egA-pp-g8K">
+                                <rect key="frame" x="0.0" y="171" width="126" height="31"/>
+                                <state key="normal" backgroundImage="tabselectedrollover1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAboutUsClick:" destination="4d9-R4-4OY" eventType="touchUpInside" id="AQ2-zQ-Cr7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vmh-nz-WxN">
+                                <rect key="frame" x="0.0" y="202" width="126" height="31"/>
+                                <state key="normal" backgroundImage="tabselectedrollover1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnContactUsClick:" destination="4d9-R4-4OY" eventType="touchUpInside" id="UEu-9K-vkU"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F72-PB-OQF">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gk9-Qk-otR">
+                                        <rect key="frame" x="480" y="20" width="70" height="40"/>
+                                        <state key="normal" backgroundImage="redcancelbutton1.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="_btnVideoClose:" destination="4d9-R4-4OY" eventType="touchUpInside" id="kMK-BF-Cc3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AXo-X8-eJc">
+                                <rect key="frame" x="0.0" y="28" width="568" height="292"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pqc-Xp-HIg">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="292"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gLH-nG-EWF">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="42"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="deleteflowslidedownconfirmation1.png" translatesAutoresizingMaskIntoConstraints="NO" id="POI-Ua-KXq">
+                                                <rect key="frame" x="0.0" y="-10" width="568" height="60"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfc-UP-HhC">
+                                                <rect key="frame" x="420" y="-4" width="62" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" backgroundImage="deleteflowbutton1.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnPopDeleteClicked:" destination="4d9-R4-4OY" eventType="touchUpInside" id="8XD-Zh-xf2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mlt-dh-z8D">
+                                                <rect key="frame" x="500" y="-4" width="62" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" backgroundImage="cancelbutton1.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnPopCancelClicked:" destination="4d9-R4-4OY" eventType="touchUpInside" id="rgh-sp-Vwr"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H4v-Al-Sg4">
+                                <rect key="frame" x="0.0" y="28" width="568" height="292"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZT4-UH-xSJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="292"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IEV-iU-Mgv">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="42"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enterflownameslidedown1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ijx-TV-ajt">
+                                                <rect key="frame" x="0.0" y="-10" width="568" height="60"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dK-dr-mqO">
+                                                <rect key="frame" x="400" y="-4" width="78" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" backgroundImage="donebuttonon1.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnPopDoneClicked:" destination="4d9-R4-4OY" eventType="touchUpInside" id="Fpg-mX-lIm"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBf-Ev-UGQ">
+                                                <rect key="frame" x="480" y="-3" width="78" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" backgroundImage="redcancelbutton1.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnPopEditCloseClicked:" destination="4d9-R4-4OY" eventType="touchUpInside" id="sMs-rq-DB4"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter flow name..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WcD-AD-SBs">
+                                                <rect key="frame" x="40" y="7" width="320" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="txtPopEditChanged:" destination="4d9-R4-4OY" eventType="valueChanged" id="82l-CA-ztb"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nKV-8G-Ln6">
+                                <rect key="frame" x="0.0" y="28" width="568" height="292"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dK7-Lp-pkz">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="292"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xxt-rl-LsI">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="42"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="startsaveclidedown1.png" translatesAutoresizingMaskIntoConstraints="NO" id="nCw-El-9T6">
+                                                <rect key="frame" x="0.0" y="-10" width="568" height="60"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G0C-6Z-wyX">
+                                                <rect key="frame" x="370" y="-4" width="78" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" backgroundImage="startflowbutton1.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnPopStartClicked:" destination="4d9-R4-4OY" eventType="touchUpInside" id="kid-s0-Ec1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="906-s9-Fz6">
+                                                <rect key="frame" x="535" y="7" width="25" height="25"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" image="whitecloseicon1.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnPopStartCloseClicked:" destination="4d9-R4-4OY" eventType="touchUpInside" id="ENb-07-iWW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAo-bX-Q77">
+                                                <rect key="frame" x="450" y="-4" width="78" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" backgroundImage="saveflowbutton1.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnPopSaveClicked:" destination="4d9-R4-4OY" eventType="touchUpInside" id="eY6-WG-0a6"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="_btnAboutUs" destination="egA-pp-g8K" id="1AF-i1-ECa"/>
+                        <outlet property="_btnCategory" destination="bGX-aT-zVt" id="5EE-uQ-Hej"/>
+                        <outlet property="_btnContactUs" destination="Vmh-nz-WxN" id="p8k-wK-70s"/>
+                        <outlet property="_btnMainView" destination="ZUN-Nx-7ma" id="ECI-PM-bgT"/>
+                        <outlet property="_btnPopEditDone" destination="9dK-dr-mqO" id="z9u-fN-5Ub"/>
+                        <outlet property="_btnPopSave" destination="JAo-bX-Q77" id="Ir8-BV-NbB"/>
+                        <outlet property="_btnVideoStart" destination="uo0-MS-auX" id="Qbb-IL-F3g"/>
+                        <outlet property="_txtPopEdit" destination="WcD-AD-SBs" id="tCr-eh-YJP"/>
+                        <outlet property="_viewAboutUs" destination="cP0-sX-KCt" id="k1v-Di-1vl"/>
+                        <outlet property="_viewContactUs" destination="kUE-RZ-M7o" id="5JW-wX-dmS"/>
+                        <outlet property="_viewExplore" destination="uTc-gP-a0M" id="IoB-Y4-pMT"/>
+                        <outlet property="_viewFlow" destination="gik-t7-8em" id="aNR-FW-ook"/>
+                        <outlet property="_viewPopupDelete" destination="AXo-X8-eJc" id="Le5-Cb-Rhk"/>
+                        <outlet property="_viewPopupDeleteBar" destination="gLH-nG-EWF" id="Boz-wf-amt"/>
+                        <outlet property="_viewPopupEdit" destination="H4v-Al-Sg4" id="bSe-yI-Uce"/>
+                        <outlet property="_viewPopupEditBar" destination="IEV-iU-Mgv" id="gQR-1Z-7UB"/>
+                        <outlet property="_viewPopupStart" destination="nKV-8G-Ln6" id="QGZ-F2-uGf"/>
+                        <outlet property="_viewPopupStartBar" destination="xxt-rl-LsI" id="ohn-ac-V8w"/>
+                        <outlet property="_viewStartVideo" destination="zrI-HD-8mT" id="YsY-SQ-YFy"/>
+                        <outlet property="_viewVideoList" destination="Bbi-HR-qBi" id="hhT-ak-yBy"/>
+                        <outlet property="_viewVideoPlayer" destination="F72-PB-OQF" id="hrv-ZQ-Tpf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jdS-sd-ad1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2235" y="-596"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="5Ai-QO-gwi">
+            <objects>
+                <viewController id="U0F-Vs-iuI" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8lV-NL-HVW"/>
+                        <viewControllerLayoutGuide type="bottom" id="3fO-Cn-wUc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zi4-u1-mwR">
+                        <rect key="frame" x="0.0" y="0.0" width="442" height="291"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="landingpagebackground1.png" translatesAutoresizingMaskIntoConstraints="NO" id="B3K-fC-bcH">
+                                <rect key="frame" x="-135" y="-32" width="577" height="323"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="un0-Ce-f2w">
+                                <rect key="frame" x="5" y="5" width="105" height="150"/>
+                                <state key="normal" backgroundImage="yourflowfifteen1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLenFifteenClicked:" destination="U0F-Vs-iuI" eventType="touchUpInside" id="PC0-Z3-6Gb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNm-RK-MHC">
+                                <rect key="frame" x="110" y="5" width="105" height="150"/>
+                                <state key="normal" backgroundImage="yourflowthirty1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLenThirtyClicked:" destination="U0F-Vs-iuI" eventType="touchUpInside" id="auN-NG-kng"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0J-in-jGU">
+                                <rect key="frame" x="215" y="5" width="105" height="150"/>
+                                <state key="normal" backgroundImage="yourflowfortyfive1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLenFourtyFiveClicked:" destination="U0F-Vs-iuI" eventType="touchUpInside" id="Pos-lM-fgM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TF0-bn-AtJ">
+                                <rect key="frame" x="320" y="5" width="105" height="150"/>
+                                <state key="normal" backgroundImage="yourflowonehour1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLenOneHourClicked:" destination="U0F-Vs-iuI" eventType="touchUpInside" id="R7d-EL-kFK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkF-MU-90i">
+                                <rect key="frame" x="5" y="5" width="105" height="150"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" backgroundImage="explorecardwarmup1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UC8-5M-7cI">
+                                <rect key="frame" x="110" y="5" width="105" height="150"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" backgroundImage="explorecardcalming1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SnW-TP-Ao9">
+                                <rect key="frame" x="320" y="5" width="105" height="150"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" backgroundImage="explorecardstrength1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wp9-za-esy">
+                                <rect key="frame" x="215" y="5" width="105" height="150"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" backgroundImage="explorecardfocus1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is where you really start to see the benefits of a yoga practice. Choose any three videos and see fast results." lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="150" translatesAutoresizingMaskIntoConstraints="NO" id="7VN-7C-X7U">
+                                <rect key="frame" x="225" y="75" width="90" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is a great way to get a solid workout in just 30 minutes. Choose any two videos." lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="150" translatesAutoresizingMaskIntoConstraints="NO" id="vmJ-cx-kuj">
+                                <rect key="frame" x="120" y="75" width="90" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="150" translatesAutoresizingMaskIntoConstraints="NO" id="hge-I6-Tht">
+                                <rect key="frame" x="330" y="75" width="90" height="70"/>
+                                <string key="text">Feeling strong? A 1-hour class will give you the opportunity to get a well-rounded workout. Try choosing any one video from each section or four in any combination.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Practice a variety of internal and external poses in a seamless flow including warriors, half moon, revolved and more." lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="150" translatesAutoresizingMaskIntoConstraints="NO" id="Xgi-bV-anX">
+                                <rect key="frame" x="225" y="75" width="90" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Take your practice to the next level by working on your balance while building strength in challenging poses." lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="150" translatesAutoresizingMaskIntoConstraints="NO" id="qUg-UC-kqP">
+                                <rect key="frame" x="120" y="75" width="90" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pick any one 15-minute video from the warm-up, strength, focus or calming sections." lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="150" translatesAutoresizingMaskIntoConstraints="NO" id="CdA-2g-XhS">
+                                <rect key="frame" x="15" y="75" width="90" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Slow it down with a gentle flow to stretch the body, leading to guided breath technique and meditation." lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="150" translatesAutoresizingMaskIntoConstraints="NO" id="v3r-HO-6iq">
+                                <rect key="frame" x="330" y="75" width="90" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fire up your practice with a warm-up filled with lunges, twists, planks &amp; more. A great place to start!" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="150" translatesAutoresizingMaskIntoConstraints="NO" id="EMi-Ry-bo9">
+                                <rect key="frame" x="15" y="75" width="90" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9q-bv-cik">
+                                <rect key="frame" x="10" y="190" width="90" height="90"/>
+                                <state key="normal" backgroundImage="favoriteflowboxempty1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFav1Clicked:" destination="U0F-Vs-iuI" eventType="touchUpInside" id="pOU-0F-g2e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19w-gv-f7t">
+                                <rect key="frame" x="120" y="190" width="90" height="90"/>
+                                <state key="normal" backgroundImage="favoriteflowboxempty1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFav2Clicked:" destination="U0F-Vs-iuI" eventType="touchUpInside" id="cf6-px-UVA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRU-Nv-kx7">
+                                <rect key="frame" x="225" y="190" width="90" height="90"/>
+                                <state key="normal" backgroundImage="favoriteflowboxempty1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFav3Clicked:" destination="U0F-Vs-iuI" eventType="touchUpInside" id="ey9-B0-b9h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3b-nF-ksl">
+                                <rect key="frame" x="330" y="190" width="90" height="90"/>
+                                <state key="normal" backgroundImage="favoriteflowboxempty1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFav4Clicked:" destination="U0F-Vs-iuI" eventType="touchUpInside" id="owN-pc-Rpp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBq-nf-TBR">
+                                <rect key="frame" x="10" y="190" width="90" height="90"/>
+                                <state key="normal" backgroundImage="deletefavoritescreen1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFav1DelClicked:" destination="U0F-Vs-iuI" eventType="touchUpInside" id="h4B-VS-ykI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bI-3w-9He">
+                                <rect key="frame" x="120" y="190" width="90" height="90"/>
+                                <state key="normal" backgroundImage="deletefavoritescreen1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFav2DelClicked:" destination="U0F-Vs-iuI" eventType="touchUpInside" id="Bev-lI-4Rw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6Q-qa-W6c">
+                                <rect key="frame" x="225" y="190" width="90" height="90"/>
+                                <state key="normal" backgroundImage="deletefavoritescreen1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFav3DelClicked:" destination="U0F-Vs-iuI" eventType="touchUpInside" id="szD-wv-rLv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWO-bL-GAR">
+                                <rect key="frame" x="330" y="190" width="90" height="90"/>
+                                <state key="normal" backgroundImage="deletefavoritescreen1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFav4DelClicked:" destination="U0F-Vs-iuI" eventType="touchUpInside" id="ptN-su-Pg9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Empty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jY2-Ry-0co">
+                                <rect key="frame" x="15" y="252" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Empty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3d-SL-9jq">
+                                <rect key="frame" x="125" y="252" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Empty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6e-y1-bOr">
+                                <rect key="frame" x="230" y="252" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Empty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySl-3L-8Ki">
+                                <rect key="frame" x="335" y="252" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egG-cO-6a2">
+                                <rect key="frame" x="410" y="153" width="30" height="30"/>
+                                <state key="normal" backgroundImage="editfavoritespencilicon1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnEditFavClicked:" destination="U0F-Vs-iuI" eventType="touchUpInside" id="Qfo-lO-81A"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="_btnAdvanced" destination="TF0-bn-AtJ" id="0CU-B3-m5o"/>
+                        <outlet property="_btnEditFav" destination="egG-cO-6a2" id="x6r-9C-7a8"/>
+                        <outlet property="_btnLight" destination="WNm-RK-MHC" id="0qj-dE-883"/>
+                        <outlet property="_btnNav1" destination="f9q-bv-cik" id="FSh-fD-JcF"/>
+                        <outlet property="_btnNav1Del" destination="jBq-nf-TBR" id="naO-qj-Lnh"/>
+                        <outlet property="_btnNav2" destination="19w-gv-f7t" id="k3S-M8-qpk"/>
+                        <outlet property="_btnNav2Del" destination="1bI-3w-9He" id="ymD-2N-MSI"/>
+                        <outlet property="_btnNav3" destination="bRU-Nv-kx7" id="9WY-SB-7xb"/>
+                        <outlet property="_btnNav3Del" destination="y6Q-qa-W6c" id="69c-z7-J9E"/>
+                        <outlet property="_btnNav4" destination="O3b-nF-ksl" id="kbg-oD-McF"/>
+                        <outlet property="_btnNav4Del" destination="CWO-bL-GAR" id="Mw4-cL-pbf"/>
+                        <outlet property="_btnQuick" destination="un0-Ce-f2w" id="Z3S-U6-KOQ"/>
+                        <outlet property="_btnRecommended" destination="d0J-in-jGU" id="JD2-OS-cWW"/>
+                        <outlet property="_btnTempCalming" destination="UC8-5M-7cI" id="sME-rO-9zQ"/>
+                        <outlet property="_btnTempFocus" destination="Wp9-za-esy" id="keS-F7-9LH"/>
+                        <outlet property="_btnTempStrength" destination="SnW-TP-Ao9" id="LuQ-5f-Bb3"/>
+                        <outlet property="_btnTempWarmup" destination="fkF-MU-90i" id="mZz-e2-8HJ"/>
+                        <outlet property="_lblNav1" destination="jY2-Ry-0co" id="m0o-4m-ibg"/>
+                        <outlet property="_lblNav2" destination="w3d-SL-9jq" id="he6-I1-kyn"/>
+                        <outlet property="_lblNav3" destination="D6e-y1-bOr" id="mfF-eu-FMs"/>
+                        <outlet property="_lblNav4" destination="ySl-3L-8Ki" id="sht-8L-Bc9"/>
+                        <outlet property="_txtAdvanced" destination="hge-I6-Tht" id="p28-cv-VIi"/>
+                        <outlet property="_txtLight" destination="vmJ-cx-kuj" id="J4P-M4-01z"/>
+                        <outlet property="_txtQuick" destination="CdA-2g-XhS" id="WWG-XY-Meb"/>
+                        <outlet property="_txtRecommended" destination="7VN-7C-X7U" id="1rG-2I-H2s"/>
+                        <outlet property="_txtTempCalming" destination="qUg-UC-kqP" id="IPs-Cd-KoW"/>
+                        <outlet property="_txtTempFocus" destination="Xgi-bV-anX" id="gtn-oc-U0Y"/>
+                        <outlet property="_txtTempStrength" destination="v3r-HO-6iq" id="qau-CT-F6j"/>
+                        <outlet property="_txtTempWarmUp" destination="EMi-Ry-bo9" id="O8H-Bo-5TL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6E8-EX-ol9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-973.5" y="-923"/>
+        </scene>
+        <!--Category View Controller-->
+        <scene sceneID="sNg-Mb-XvS">
+            <objects>
+                <viewController id="ybV-Dp-IYj" customClass="CategoryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fiI-bl-AE2"/>
+                        <viewControllerLayoutGuide type="bottom" id="p6G-NG-NG8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X7X-0d-lEn">
+                        <rect key="frame" x="0.0" y="0.0" width="442" height="291"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="landingpagebackground1.png" translatesAutoresizingMaskIntoConstraints="NO" id="bE6-nq-djF">
+                                <rect key="frame" x="-135" y="-32" width="577" height="323"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61A-EK-YiK">
+                                <rect key="frame" x="320" y="5" width="105" height="150"/>
+                                <state key="normal" backgroundImage="yourflowonehour1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RXp-6b-8nf">
+                                <rect key="frame" x="5" y="5" width="105" height="150"/>
+                                <state key="normal" backgroundImage="yourflowfifteen1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlD-dq-crq">
+                                <rect key="frame" x="215" y="5" width="105" height="150"/>
+                                <state key="normal" backgroundImage="yourflowfortyfive1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvc-3T-CMG">
+                                <rect key="frame" x="110" y="5" width="105" height="150"/>
+                                <state key="normal" backgroundImage="yourflowthirty1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ni-Ri-bll">
+                                <rect key="frame" x="110" y="5" width="105" height="150"/>
+                                <state key="normal" backgroundImage="explorecardcalming1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnCalming_Clicked:" destination="ybV-Dp-IYj" eventType="touchUpInside" id="5ST-sM-rYY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0f-dp-Qii">
+                                <rect key="frame" x="320" y="5" width="105" height="150"/>
+                                <state key="normal" backgroundImage="explorecardstrength1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnStrength_Clicked:" destination="ybV-Dp-IYj" eventType="touchUpInside" id="Xes-Po-ftQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YgK-qV-6R3">
+                                <rect key="frame" x="215" y="5" width="105" height="150"/>
+                                <state key="normal" backgroundImage="explorecardfocus1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFocus_Clicked:" destination="ybV-Dp-IYj" eventType="touchUpInside" id="tgo-iI-Wi9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsz-xv-Tj7">
+                                <rect key="frame" x="5" y="5" width="105" height="150"/>
+                                <state key="normal" backgroundImage="explorecardwarmup1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnWarmUp_Clicked:" destination="ybV-Dp-IYj" eventType="touchUpInside" id="PLq-BG-DQR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="150" translatesAutoresizingMaskIntoConstraints="NO" id="sV0-US-QDk">
+                                <rect key="frame" x="330" y="75" width="90" height="70"/>
+                                <string key="text">Feeling strong? A 1-hour class will give you the opportunity to get a well-rounded workout. Try choosing any one video from each section or four in any combination.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fire up your practice with a warm-up filled with lunges, twists, planks &amp; more. A great place to start!" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="150" translatesAutoresizingMaskIntoConstraints="NO" id="1bi-dy-Lgp">
+                                <rect key="frame" x="15" y="75" width="90" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Take your practice to the next level by working on your balance while building strength in challenging poses." lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="150" translatesAutoresizingMaskIntoConstraints="NO" id="jqS-FI-DWi">
+                                <rect key="frame" x="120" y="75" width="90" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is where you really start to see the benefits of a yoga practice. Choose any three videos and see fast results." lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="150" translatesAutoresizingMaskIntoConstraints="NO" id="F05-jd-d5D">
+                                <rect key="frame" x="225" y="75" width="90" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pick any one 15-minute video from the warm-up, strength, focus or calming sections." lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="150" translatesAutoresizingMaskIntoConstraints="NO" id="OOv-my-kEI">
+                                <rect key="frame" x="15" y="75" width="90" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is a great way to get a solid workout in just 30 minutes. Choose any two videos." lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="150" translatesAutoresizingMaskIntoConstraints="NO" id="cl8-RI-DQy">
+                                <rect key="frame" x="120" y="75" width="90" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Slow it down with a gentle flow to stretch the body, leading to guided breath technique and meditation." lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="150" translatesAutoresizingMaskIntoConstraints="NO" id="qBK-uX-dYA">
+                                <rect key="frame" x="330" y="75" width="90" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Practice a variety of internal and external poses in a seamless flow including warriors, half moon, revolved and more." lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="150" translatesAutoresizingMaskIntoConstraints="NO" id="pKY-EB-ks0">
+                                <rect key="frame" x="225" y="75" width="90" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUo-hG-Hlx">
+                                <rect key="frame" x="410" y="153" width="30" height="30"/>
+                                <state key="normal" backgroundImage="editfavoritespencilicon1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnEditFav_Clicked:" destination="ybV-Dp-IYj" eventType="touchUpInside" id="e4G-yo-tdN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVl-jt-Yea">
+                                <rect key="frame" x="10" y="190" width="90" height="90"/>
+                                <state key="normal" backgroundImage="favoriteflowboxempty1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFav1_Clicked:" destination="ybV-Dp-IYj" eventType="touchUpInside" id="lcw-56-AFw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyz-FU-pdo">
+                                <rect key="frame" x="120" y="190" width="90" height="90"/>
+                                <state key="normal" backgroundImage="favoriteflowboxempty1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFav2_Clicked:" destination="ybV-Dp-IYj" eventType="touchUpInside" id="Vd4-Cy-P8s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBH-Jl-LfI">
+                                <rect key="frame" x="225" y="190" width="90" height="90"/>
+                                <state key="normal" backgroundImage="favoriteflowboxempty1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFav3_Clicked:" destination="ybV-Dp-IYj" eventType="touchUpInside" id="FqW-EA-h4x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQu-zP-qkA">
+                                <rect key="frame" x="330" y="190" width="90" height="90"/>
+                                <state key="normal" backgroundImage="favoriteflowboxempty1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFav4_Clicked:" destination="ybV-Dp-IYj" eventType="touchUpInside" id="sEF-8n-TYd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bvh-Ne-MkZ">
+                                <rect key="frame" x="10" y="190" width="90" height="90"/>
+                                <state key="normal" backgroundImage="deletefavoritescreen1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFav1Del_Clicked:" destination="ybV-Dp-IYj" eventType="touchUpInside" id="Sid-XO-5n6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGg-bJ-GJ6">
+                                <rect key="frame" x="120" y="190" width="90" height="90"/>
+                                <state key="normal" backgroundImage="deletefavoritescreen1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFav2Del_Clicked:" destination="ybV-Dp-IYj" eventType="touchUpInside" id="mAj-ur-ydp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJx-Az-S9r">
+                                <rect key="frame" x="225" y="190" width="90" height="90"/>
+                                <state key="normal" backgroundImage="deletefavoritescreen1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFav3Del_Clicked:" destination="ybV-Dp-IYj" eventType="touchUpInside" id="EPz-Ma-TX9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n20-uL-QrA">
+                                <rect key="frame" x="330" y="190" width="90" height="90"/>
+                                <state key="normal" backgroundImage="deletefavoritescreen1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFav4Del_Clicked:" destination="ybV-Dp-IYj" eventType="touchUpInside" id="XdH-0c-4b6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Empty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLt-Rw-iuq">
+                                <rect key="frame" x="15" y="252" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Empty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5uY-9W-LLm">
+                                <rect key="frame" x="125" y="252" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Empty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DS1-pI-HaQ">
+                                <rect key="frame" x="230" y="252" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Empty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldk-NI-bPR">
+                                <rect key="frame" x="335" y="252" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="_btnCalming" destination="3ni-Ri-bll" id="snW-YD-KsL"/>
+                        <outlet property="_btnEditFav" destination="YUo-hG-Hlx" id="GtT-A5-yui"/>
+                        <outlet property="_btnFav1" destination="MVl-jt-Yea" id="Mu0-Kk-h1m"/>
+                        <outlet property="_btnFav1Del" destination="Bvh-Ne-MkZ" id="juz-jZ-Muq"/>
+                        <outlet property="_btnFav2" destination="pyz-FU-pdo" id="PPf-OO-3mM"/>
+                        <outlet property="_btnFav2Del" destination="sGg-bJ-GJ6" id="qEu-vy-ST2"/>
+                        <outlet property="_btnFav3" destination="jBH-Jl-LfI" id="Twx-Zp-IhC"/>
+                        <outlet property="_btnFav3Del" destination="LJx-Az-S9r" id="QLa-pT-AzV"/>
+                        <outlet property="_btnFav4" destination="JQu-zP-qkA" id="vwZ-CW-xAM"/>
+                        <outlet property="_btnFav4Del" destination="n20-uL-QrA" id="ciC-nq-KjB"/>
+                        <outlet property="_btnFocus" destination="YgK-qV-6R3" id="e2Z-q5-ZIx"/>
+                        <outlet property="_btnStrength" destination="t0f-dp-Qii" id="O2j-lq-Wow"/>
+                        <outlet property="_btnTempFifteen" destination="RXp-6b-8nf" id="huo-M6-9mG"/>
+                        <outlet property="_btnTempFourtyFive" destination="dlD-dq-crq" id="hQP-Fw-mMX"/>
+                        <outlet property="_btnTempHour" destination="61A-EK-YiK" id="MiU-qA-fZ0"/>
+                        <outlet property="_btnTempThirty" destination="bvc-3T-CMG" id="koZ-QL-t0C"/>
+                        <outlet property="_btnWarmUp" destination="hsz-xv-Tj7" id="4oL-QV-pwe"/>
+                        <outlet property="_lblFav1" destination="OLt-Rw-iuq" id="Aop-K2-PXC"/>
+                        <outlet property="_lblFav2" destination="5uY-9W-LLm" id="Gww-vP-jJb"/>
+                        <outlet property="_lblFav3" destination="DS1-pI-HaQ" id="ihO-Lf-h4L"/>
+                        <outlet property="_lblFav4" destination="ldk-NI-bPR" id="xKP-z3-K3a"/>
+                        <outlet property="_txtCalming" destination="jqS-FI-DWi" id="arM-nX-Vhj"/>
+                        <outlet property="_txtFocus" destination="pKY-EB-ks0" id="q4Z-KS-8Tt"/>
+                        <outlet property="_txtStrength" destination="qBK-uX-dYA" id="fWg-Mr-UoA"/>
+                        <outlet property="_txtTempFifteen" destination="OOv-my-kEI" id="OmI-To-N8V"/>
+                        <outlet property="_txtTempFourtyFive" destination="F05-jd-d5D" id="l1I-Od-Djg"/>
+                        <outlet property="_txtTempOneHour" destination="sV0-US-QDk" id="zG2-sr-jjv"/>
+                        <outlet property="_txtTempThirty" destination="cl8-RI-DQy" id="QBW-9R-7Ar"/>
+                        <outlet property="_txtWarmUp" destination="1bi-dy-Lgp" id="7kx-Ve-mxG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JgR-jh-6F5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-646" y="-426"/>
+        </scene>
+        <!--Select Video View Controller-->
+        <scene sceneID="57r-jm-8Qc">
+            <objects>
+                <viewController id="Cua-EJ-dYu" customClass="SelectVideoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="808-4Z-4Ij"/>
+                        <viewControllerLayoutGuide type="bottom" id="nJW-cr-Svb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Ex-Kt-TpS">
+                        <rect key="frame" x="0.0" y="0.0" width="442" height="291"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cnv-Rq-Alb">
+                                <rect key="frame" x="0.0" y="0.0" width="442" height="291"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flowslideoutfifteen1.png" translatesAutoresizingMaskIntoConstraints="NO" id="HHs-PY-He0">
+                                        <rect key="frame" x="-10" y="-3" width="452" height="350"/>
+                                    </imageView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="2en-8E-czs">
+                                        <rect key="frame" x="0.0" y="26" width="442" height="265"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </tableView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whitecloseicon1.png" translatesAutoresizingMaskIntoConstraints="NO" id="za8-x6-3Q9">
+                                        <rect key="frame" x="409" y="3" width="20" height="20"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSK-JE-kQI">
+                                        <rect key="frame" x="400" y="-5" width="40" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnClose_Clicked:" destination="Cua-EJ-dYu" eventType="touchUpInside" id="DLG-7k-jQ4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="_imgBackground" destination="HHs-PY-He0" id="JHM-ft-SeG"/>
+                        <outlet property="_mainView" destination="cnv-Rq-Alb" id="gPm-8S-AIF"/>
+                        <outlet property="_tblVideoList" destination="2en-8E-czs" id="BUi-DQ-Iwm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8pp-97-yQO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-681" y="65"/>
+        </scene>
+        <!--Start Video View Controller-->
+        <scene sceneID="QSc-tM-SbG">
+            <objects>
+                <viewController id="3Df-2q-pTY" customClass="StartVideoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OHW-lK-7HS"/>
+                        <viewControllerLayoutGuide type="bottom" id="L2E-P2-GCh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vhl-9a-HvM">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loadingbeforeworkout1.png" translatesAutoresizingMaskIntoConstraints="NO" id="lyI-6h-40S">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYH-kb-bnb">
+                                <rect key="frame" x="0.0" y="270" width="568" height="50"/>
+                                <state key="normal" image="beginworkoutbuttonunclicked1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnBeginClicked:" destination="3Df-2q-pTY" eventType="touchUpInside" id="sem-QP-t3h"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="_btnBegin" destination="eYH-kb-bnb" id="nCJ-SX-DCT"/>
+                        <outlet property="_imgBackground" destination="lyI-6h-40S" id="x8a-uO-oyr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dNS-lm-Uow" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1487" y="177"/>
+        </scene>
+        <!--Contact Us View Controller-->
+        <scene sceneID="Qco-2x-vIs">
+            <objects>
+                <viewController id="aJD-kL-IdB" customClass="ContactUsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zrf-7J-h1o"/>
+                        <viewControllerLayoutGuide type="bottom" id="FDt-7A-xa3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q7l-pj-C4n">
+                        <rect key="frame" x="0.0" y="0.0" width="442" height="291"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contactusslideout1.png" translatesAutoresizingMaskIntoConstraints="NO" id="OI1-vU-3SU">
+                                <rect key="frame" x="-5" y="-4" width="447" height="294"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v7c-D5-ZED" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2025" y="490"/>
+        </scene>
+        <!--About Us View Controller-->
+        <scene sceneID="izK-qJ-J70">
+            <objects>
+                <viewController id="FtK-51-7IG" customClass="AboutUsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IDk-XO-Yeh"/>
+                        <viewControllerLayoutGuide type="bottom" id="gYB-XO-yj6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="agi-JE-7K4">
+                        <rect key="frame" x="0.0" y="0.0" width="442" height="291"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aboutusslideoutbackground1.png" translatesAutoresizingMaskIntoConstraints="NO" id="YHx-e4-RiU">
+                                <rect key="frame" x="-3" y="-4" width="445" height="294"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wo3-LV-ZXm">
+                                <rect key="frame" x="16" y="37" width="80" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tips" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1U-lH-m6l">
+                                <rect key="frame" x="32" y="416" width="80" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="725" translatesAutoresizingMaskIntoConstraints="NO" id="tTa-fZ-afs">
+                                <rect key="frame" x="16" y="198" width="406" height="78"/>
+                                <string key="text">Yoga By Design wants you to experience the luxury and benefits of a private yoga session whether - at home, work, or on the road - allowing you to incorporate a feel-good workout into your daily routine no matter how much time you have.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="725" translatesAutoresizingMaskIntoConstraints="NO" id="cc7-XR-igt">
+                                <rect key="frame" x="32" y="455" width="725" height="73"/>
+                                <string key="text">Customize your workout on any given day by choosing one or more 15-minute sessions from the warm-up, strength, focus or calming categories.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mission" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufD-IC-XFD">
+                                <rect key="frame" x="16" y="175" width="80" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="725" translatesAutoresizingMaskIntoConstraints="NO" id="PrN-fT-BXj">
+                                <rect key="frame" x="16" y="57" width="406" height="100"/>
+                                <string key="text">Yoga By Design is a user-friendly, customizable and guided yoga practice. It's designed to accommodate your individual needs while providing a workout that includes breath, movement and meditation. Feel the benefits of training with a private instructor who integrates attention to detail with variety to help you progress and get the most out of every session.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k9V-D0-3Z3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1425" y="710"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Sjh-1q-LNo">
+            <objects>
+                <viewController id="EIH-hv-ULq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HM7-Zu-DJu"/>
+                        <viewControllerLayoutGuide type="bottom" id="HYf-46-e7W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yXn-Uf-uSf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RaW-aZ-Mpj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1934" y="1196"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="aboutusslideoutbackground1.png" width="811" height="716"/>
+        <image name="beginworkoutbuttonunclicked1.png" width="1204" height="95"/>
+        <image name="cancelbutton1.png" width="122" height="84"/>
+        <image name="contactusslideout1.png" width="814" height="716"/>
+        <image name="deletefavoritescreen1.png" width="414" height="414"/>
+        <image name="deleteflowbutton1.png" width="122" height="84"/>
+        <image name="deleteflowslidedownconfirmation1.png" width="1024" height="86"/>
+        <image name="donebuttonon1.png" width="115" height="67"/>
+        <image name="editfavoritespencilicon1.png" width="66" height="61"/>
+        <image name="enterflownameslidedown1.png" width="1024" height="86"/>
+        <image name="explorecardcalming1.png" width="204" height="356"/>
+        <image name="explorecardfocus1.png" width="204" height="356"/>
+        <image name="explorecardstrength1.png" width="204" height="356"/>
+        <image name="explorecardwarmup1.png" width="204" height="356"/>
+        <image name="favoriteflowboxempty1.png" width="210" height="210"/>
+        <image name="flowslideoutfifteen1.png" width="811" height="715"/>
+        <image name="landingpagebackground1.png" width="568" height="320"/>
+        <image name="loadingbeforeworkout1.png" width="1024" height="768"/>
+        <image name="redcancelbutton1.png" width="118" height="68"/>
+        <image name="saveflowbutton1.png" width="156" height="83"/>
+        <image name="startflowbutton1.png" width="156" height="83"/>
+        <image name="startsaveclidedown1.png" width="1024" height="86"/>
+        <image name="tabselectedrollover1.png" width="222" height="57"/>
+        <image name="whitecloseicon1.png" width="110" height="110"/>
+        <image name="yourflowfifteen1.png" width="198" height="352"/>
+        <image name="yourflowfortyfive1.png" width="205" height="361"/>
+        <image name="yourflowonehour1.png" width="205" height="356"/>
+        <image name="yourflowthirty1.png" width="205" height="361"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
